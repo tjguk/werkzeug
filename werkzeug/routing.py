@@ -782,7 +782,7 @@ class Rule(RuleFactory):
 
         :internal:
         """
-        return bool(self.arguments), -len(self._weights), self._weights
+        return bool(self.arguments), self._weights, -len(self._weights)
 
     def build_compare_key(self):
         """The build compare key for sorting.
